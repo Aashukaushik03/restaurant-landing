@@ -193,7 +193,7 @@
     .btn-outline:hover { border-color: var(--gold); color: var(--gold); }
 
     /* ADSENSE BANNER SLOT */
-    .ad-slot {
+    /*.ad-slot {
       background: var(--bg2);
       border-top: 1px solid var(--border);
       border-bottom: 1px solid var(--border);
@@ -201,11 +201,76 @@
       text-align: center;
       min-height: 100px;
       display: flex; align-items: center; justify-content: center;
-    }
+    }*/
     /* Real AdSense ins tag — uncomment when approved */
     /*
     .ad-slot ins.adsbygoogle { display: block; }
     */
+
+    .custom-ad {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  padding: 1.5rem 2rem;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #1c140d, #2b1e12);
+  border: 1px solid rgba(232,168,56,0.25);
+  position: relative;
+  overflow: hidden;
+}
+
+.custom-ad::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092?w=800&q=80') center/cover;
+  opacity: 0.15;
+}
+
+.ad-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.ad-tag {
+  display: inline-block;
+  font-size: 0.7rem;
+  color: #f5c96a;
+  border: 1px solid rgba(232,168,56,0.4);
+  padding: 0.2rem 0.8rem;
+  border-radius: 20px;
+  margin-bottom: 0.6rem;
+}
+
+.custom-ad h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  color: #e8a838;
+  margin-bottom: 0.4rem;
+}
+
+.custom-ad p {
+  font-size: 0.9rem;
+  color: #ddd;
+  margin-bottom: 1rem;
+}
+
+.ad-btn {
+  background: #e8a838;
+  color: #1a1008;
+  padding: 0.5rem 1.4rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.ad-btn:hover {
+  background: #f5c96a;
+}
+
+    
     .ad-placeholder {
       color: var(--text3); font-size: 0.78rem;
       border: 1px dashed rgba(255,255,255,0.08);
