@@ -91,13 +91,16 @@
        → Replace AW-XXXXXXXXX and CONVERSION_LABEL
        → The trackConversion() call fires when user books
   ════════════════════════════════════════════════ -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-XXXXXXXXX"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18053101530"></script>
   <script>
-    gtag('config', 'AW-123456789');
+    window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+    gtag('config', 'AW-18053101530');
 
     function trackConversion() {
       gtag('event', 'conversion', {
-        send_to: 'AW-123456789/CONVERSION_LABEL',
+        send_to: 'AW-18053101530/CONVERSION_LABEL',
         value: 1.0,
         currency: 'INR'
       });
